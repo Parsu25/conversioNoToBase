@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()  
+{
+   int n,b,a[1000],i=0,j;
+   scanf("%d%d",&n,&b);
+   while(n>0)
+   {
+       a[i++]=n%b;
+       n/=b;
+   }
+   for(j=i;j>=0;j--)
+   {
+       printf("%d",a[j]);
+   }
+}
